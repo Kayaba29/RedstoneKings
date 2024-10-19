@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - RedstoneKings Official</title>
+  <link rel="icon" href="redstone.png">  
+  <meta name="viewport" content="width device-width, initial-scale=1" />
+  <link rel="stylesheet" href="index.css"/>
+  <style>
+    /* Allgemeiner Text und Hintergrundbild */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: #666;
+        background-image: url('Star.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+    }
+
+    /* Navigationsleiste */
+    .sidebar {
+        width: 270px;
+        height: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+    }
+
+    /* Button-Stil für die Navigationsleiste */
+    .sidebar a.button {
+        display: block;
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    /* Button-Stil für aktive Seite */
+    .sidebar a.active {
+        background-color: #777777;
+    }
+
+    /* Inhalt rechts von der Navigationsleiste */
+    .content {
+        margin-left: 270px; /* Änderung: Anpassung der Margin-Left auf die Sidebar-Breite */
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  	/* Ändere die Farbe der normalen Links (nicht besucht) */
+  	a {
+  	  color: #AE0000; /* Hier kannst du die gewünschte Farbe festlegen */
+  	  text-decoration: none; /* Entfernt die Unterstreichung der Links */
+  	}
+    
+  	/* Ändere die Farbe der besuchten Links */
+  	a:visited {
+  	  color: #ae0000; /* Hier kannst du die Farbe für besuchte Links festlegen */
+  	}
+    
+  	/* Ändere die Farbe der Links beim Überfahren mit der Maus */
+  	a:hover {
+  	  color: #FF8B00; /* Hier kannst du die Farbe festlegen, wenn die Maus über dem Link ist */
+  	}
+  </style>
+  
+</head>
+<body style="background: linear-gradient(to bottom, #0F0F0F, #3F3F3F); display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden;">
+
+	<div class="sidebar">
+    <h1 style="color: #fff; font-weight: bolder;">Anmelden</h1>
+    <a class="button active" href="index.html" style="color: #fff; font-weight: bolder; margin-top: 20px;">Zurück</a>
+</div>
+
+
+  <div class="form-wrap">
+		<div class="tabs">
+			<h3 class="signup-tab" style="font-size: 24px;"><a class="active" href="#signup-tab-content" style="border-top-left-radius: 7px;">Registrieren</a></h3>
+		</div>
+		<div class="tabs-content">
+			<div id="signup-tab-content" class="active">
+				<form class="signup-form" action="" method="post">
+					
+					<input type="email" class="inputbox" id="user_name" style="font-size: 24px;" autocomplete="off" placeholder="Email">
+					<input type="password" class="inputbox" id="user_pass" style="font-size: 24px;" autocomplete="off" placeholder="Passwort">
+					<input type="submit" class="button" value="Sign Up" style="font-size: 24px;">
+				</form>
+				<div class="help">
+					<p style="font-size: 18px;color:#ae7700">Mit Ihrer Anmeldung stimmen Sie unseren</p>
+					<p style="font-size: 18px; color: #ae7700;">
+						<a href="https://discord.com/terms">Nutzungsbedingungen</a> zu
+					  </p>
+					  
+				</div>
+			</div>
+			<div id="login-tab-content">
+				<h3 class="login-tab" style="font-size: 24px;"><a href="#login-tab-content" style="border-top-right-radius: 7px;">Anmelden</a></h3>
+				<form class "login-form" action="" method="post">
+					<input type="email" class="input" id="email" autocomplete="off" placeholder="Email" style="font-size: 24px;">
+					<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Passwort" style="font-size: 24px;">
+					<input type="checkbox" class="checkbox" id="remember_me" style="font-size: 24px;">
+					<label for="remember_me" style="font-size: 24px;color: #ae7700;">Anmeldedaten Speichern</label>
+					<input type="submit" class="button" value="Login" style="font-size: 24px;color: #AE0000; background-color:lightskyblue ;font-weight: bolder;border-style:groove;">
+				</form>
+				<div class="help">
+					<p><a href="pwf.html">Forget your password?</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/index.js"></script>
+
+</body>
+</html>

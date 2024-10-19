@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Passwort vergessen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+        /* Ändere die Farbe der normalen Links (nicht besucht) */
+        a {
+            color: #AE0000; /* Hier kannst du die gewünschte Farbe festlegen */
+            text-decoration: none; /* Entfernt die Unterstreichung der Links */
+        }
+    
+        /* Ändere die Farbe der besuchten Links */
+        a:visited {
+            color: #AE0000; /* Hier kannst du die Farbe für besuchte Links festlegen */
+        }
+    
+        /* Ändere die Farbe der Links beim Überfahren mit der Maus */
+        a:hover {
+            color: #FF8B00; /* Hier kannst du die Farbe festlegen, wenn die Maus über dem Link ist */
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #0F0F0F, #3F3F3F);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; background: #fff; padding: 20px;">
+        <h1>Passwort vergessen</h1>
+        <p>Geben Sie Ihre E-Mail-Adresse ein, um einen Link zum Zurücksetzen Ihres Passworts zu erhalten:</p>
+        <form action="pwf.php" method="post">
+            E-Mail: <input type="email" name="email" required><br>
+            <input type="submit" value="Link senden">
+        </form>
+    
+        <!-- Hier können Sie Ihren anderen Inhalt hinzufügen, der unter dem Passwort vergessen-Formular erscheinen soll -->
+        <p>Ihr weiterer Inhalt hier.</p>
+    </div>
+</body>
+</html>

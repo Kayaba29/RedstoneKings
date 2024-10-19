@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #6b2cff
+}
+
+/* Stil für die Sidebar */
+.sidebar {
+  font-family: 'Raleway', sans-serif; /* Schriftart für die Sidebar */
+  width: 100%;
+  background-color: #333;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex; /* Flexbox-Layout für die Sidebar */
+  justify-content: space-around; /* Buttons werden gleichmäßig auf dem Container verteilt */
+}
+
+.sidebar a.button {
+  font-family: 'Raleway', sans-serif; /* Schriftart für die Sidebar-Buttons */
+  font-size: 32px; /* Schriftgröße für die Sidebar-Buttons */
+  display: block;
+  min-width: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #777777;
+}
+
+/* Stil für den restlichen Inhalt */
+.content {
+  margin-top: 60px; /* Passen Sie den Abstand nach Bedarf an */
+  padding: 20px;
+  text-align: center;
+  color: #B7B7B7;
+}
+
+.scroll1 {
+  text-align: center;
+  margin-top: 200px; /* Passe den oberen Abstand nach Bedarf an */
+  color: #ffffff; /* Ändere die Textfarbe nach Bedarf */
+  font-family: sans-serif;
+  width: 100%; /* Füge diese Zeile hinzu, um die Breite des Elements auf 100% zu setzen */
+}
+
+.scroll {
+  text-align: left;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; /* Hinzugefügt: Elemente in einer Spalte anordnen */
+}

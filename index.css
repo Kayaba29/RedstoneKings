@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Schriftgröße für h1 anpassen */
+h1 {
+  font-size: 50px; /* Hier die gewünschte Schriftgröße in Pixeln angeben */
+  color: #B7B7B7;
+}
+
+.content h1 {
+  margin: 30px; /* Ändere den Wert nach Bedarf */
+  color: #B7B7B7;
+}
+
+h2 {
+  color: #B7B7B7;
+}
+
+.content h2 {
+  color: #B7B7B7;
+}
+
+/* Restlicher Text-Stil */
+.RestText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1E1F22;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 600px;
+  margin: 20px auto; /* Ändere den Wert nach Bedarf */
+  overflow: auto;
+}
+
+.RestText p {
+  color: #B7B7B7;
+  margin: 10px 0;
+}
+
+.RestText2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1E1F22;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 1200px;
+  margin: 20px auto; /* Ändere den Wert nach Bedarf */
+}
+
+.RestText2 p {
+  color: #B7B7B7;
+  margin: 10px 0;
+}
+
+/* Stil für die Sidebar */
+.sidebar {
+  width: 270px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.sidebar a.button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #555;
+  color: #B7B7B7;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #555;
+  color: #B7B7B7;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Stil für den Login-Button */
+.login-button {
+  padding: 10px;
+  background-color: #555;
+  color: #B7B7B7;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Widget-Stil */
+.widget-article {
+  text-align: center;
+  margin-top: 19px; /* Reduzieren Sie den Margin-Top-Wert auf 19px */
+}
+
+.widget-article iframe {
+  max-width: calc(100% - 1px); /* Berechnung der Breite mit 1px-Abstand zum rechten Rand */
+}
+
+/* Stil für den "Coming Soon" Button */
+.coming-soon-button {
+  margin-top: 20px; /* Hier kannst du den Abstand nach Bedarf anpassen */
+  padding: 20px;
+  background-color: #1d2630;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block; /* Stellt sicher, dass der Button die volle Breite einnimmt */
+  margin: 0 auto; /* Zentriert den Button horizontal */
+}
+
+/* Inhalt rechts von der Navigationsleiste */
+.content {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  color: #666;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font: 16px/26px "Raleway", sans-serif;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #313151;
+}
+
+input {
+  font: 16px/26px "Raleway", sans-serif;
+  position: relative;
+}
+
+.inputbox input {
+  padding: 15px 20px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid#ee8456;
+  font-size: 1em;
+  transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+}
+
+.inputbox input:focus ~
+ span,
+.inputbox input:valid ~
+ span {
+  font-size: 0.7em;
+  transform: translate
+  x(14px)
+  translatey(-7.5px);
+  padding: 0 5px;
+  border-radius: 2px;
+  background: #212121;
+  letter-spacing: 0em;
+  border: 1px solid #ee8456;
+ }
+
+.form-wrap {
+  background-color: #B7B7B7;
+  width: 400px;
+  height: 400px;
+  margin: 3em auto;
+  border-radius: 7px;
+}
+
+.form-wrap .tabs {
+  overflow: hidden;
+}
+
+.form-wrap .tabs h3 {
+  float: left;
+  width: 50%;
+}
+
+.form-wrap .tabs h3 a {
+  padding: 0.5em 0;
+  text-align: center;
+  font-weight: 400;
+  background-color: #e6e7e8;
+  display: block;
+  color: #666;
+}
+
+.form-wrap .tabs h3 a.active {
+  background-color: #B7B7B7;
+}
+
+.form-wrap .tabs-content {
+  padding: 1.5em;
+}
+
+.form-wrap .tabs-content div[id$="tab-content"] {
+  display: none;
+}
+
+.form-wrap .tabs-content .active {
+  display: block !important;
+}
+
+.form-wrap form .input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.8em 0 10px 0.8em;
+  border: 1px solid #cfcfcf;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8em 0;
+  padding-right: 2em;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.form-wrap form .button {
+  width: 100%;
+  padding: 0.8em 0 10px 0.8em;
+  background-color: #24243e;
+  border: none;
+  color: #B7B7B7;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
+.form-wrap form .button:hover {
+  background-color: #313151;
+}
+
+.form-wrap .help {
+  margin-top: 0.6em;
+}
+
+.form-wrap .help p {
+  text-align: center;
+  font-size: 14px;
+}

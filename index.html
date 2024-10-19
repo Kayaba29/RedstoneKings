@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedstoneKings Official</title>
+    <link rel="icon" href="redstone.png">
+    <style>
+        /* Benutzerdefinierte Scrollleiste für WebKit-basierte Browser (Chrome, Safari, Opera GX) */
+        .RestText::-webkit-scrollbar {
+            width: 5px; /* Dicke der Scrollleiste */
+        }
+    
+        .RestText::-webkit-scrollbar-thumb {
+            background-color: gray; /* Farbe des Scrollleisten-Griffes */
+            border-radius: 5px; /* Runde Ecken für den Scrollleisten-Griff */
+        }
+        /* Allgemeiner Text und Hintergrundbild */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: #666;
+            background-image: url('Star.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+    
+        /* Benutzerdefinierte Scrollleiste */
+        .RestText {
+            position: relative;
+            padding: 20px;
+            max-width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff50;
+            backdrop-filter: blur(5px);
+            border-radius: 25px;
+            overflow-y: auto;
+        }
+    
+        /* Benutzerdefinierte Scrollleiste für WebKit-basierte Browser (Chrome, Safari) */
+        .RestText::-webkit-scrollbar {
+            width: 5px; /* Dicke der Scrollleiste */
+        }
+    
+        .RestText::-webkit-scrollbar-thumb {
+            background-color: gray; /* Farbe des Scrollleisten-Griffes */
+            border-radius: 5px; /* Runde Ecken für den Scrollleisten-Griff */
+        }
+    
+        /* Benutzerdefinierte Scrollleiste für Firefox */
+        .RestText {
+            scrollbar-width: thin; /* Dünne Scrollleiste */
+            scrollbar-color: gray transparent; /* Farbe des Scrollleisten-Griffes */
+        }
+
+        /* Navigationsleiste */
+        .sidebar {
+            width: 270px;
+            height: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+
+        /* Button-Stil für die Navigationsleiste */
+        .sidebar a.button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        /* Button-Stil für aktive Seite */
+        .sidebar a.active {
+            background-color: #777777;
+        }
+
+        /* Inhalt rechts von der Navigationsleiste */
+        .content {
+            margin-left: 270px; /* Änderung: Anpassung der Margin-Left auf die Sidebar-Breite */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Widget-Stil */
+        .widget-article {
+            text-align: center;
+            margin-top: 20px; /* Änderung: Hinzufügen von Margin-Top */
+        }
+
+        .widget-article iframe {
+            max-width: 100%;
+        }
+        
+        /* Footer-Stil für den Bereich mit den wichtigen Informationen */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Stil für die Buttons im Footer */
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Glow-Effekt für den "RedstoneKings" Text */
+        h1 {
+            color: #fff; /* Textfarbe auf weiß setzen */
+            text-shadow: 0 0 10px #ff0000, /* Glow-Effekt mit rotem Schatten */
+                         0 0 20px #ffffff, /* Optional: Mehrere Schatten für stärkeren Effekt */
+                         0 0 30px #ff0000;
+        }
+
+        /* Abstand zwischen "Official Website" und "Coming Soon" Button */
+        h2 {
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+
+    <audio id="background-music" loop>
+        <source src="CP77-never-fade-away-alternate-version.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="sidebar">
+        <a class="button active" href="index.html">- Home -</a>
+        <a class="button" href="calender.html">Calender</a>
+        <a class="button login-button" href="customLogin.html">Login</a>
+        
+        <div class="widget-article">
+            <iframe src="https://discord.com/widget?id=644136856526782484&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>RedstoneKings</h1>
+        <h2>Official Website</h2>
+        <a class="coming-soon-button" href="Comming Soon.html" style="font-weight: bold; color: crimson; font-size:xx-large;">Coming Soon</a>
+
+        <!-- Hier kommt der restliche Text (Inhalt) -->
+        <div class="RestText">
+            <h2>Server: Test Server</h2>
+            <p>Beschreibung: Test</p>
+            <p>Max Spieler: 000001</p>
+        </div>
+    </div>
+    
+    <!-- Footer-Bereich mit den wichtigen Informationen -->
+    <div class="footer">
+        <a href="about.html">Über uns</a>
+        <a href="agb.html">AGB</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="imprint.html">Impressum</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var music = document.getElementById("background-music");
+            var clickSound = new Audio('tap.mp3');
+            var doubleClickSound = new Audio('tap.mp3');
+
+            // Set volume to 15%
+            music.volume = 0.15;
+
+            // Start background music on page load
+            music.play();
+
+            // Add click event to play the click sound
+            document.body.addEventListener('click', function() {
+                clickSound.cloneNode(true).play();
+            });
+
+            // Add double click event to play the double click sound
+            document.body.addEventListener('dblclick', function() {
+                doubleClickSound.cloneNode(true).play();
+            });
+        }
+    </script>
+
+</body>
+</html>

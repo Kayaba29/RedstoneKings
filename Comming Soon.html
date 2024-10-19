@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Comming Soon.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedstoneKings Official</title>
+    <link rel="icon" href="redstone.png">
+    <style>
+        @keyframes spin3D {
+            from {
+                transform: rotate3d(.5, .5, .5, 360deg);
+            }
+            to {
+                transform: rotate3d(0deg);
+            }
+        }
+
+        @-webkit-keyframes spin3D {
+            from {
+                -webkit-transform: rotate3d(.5, .5, .5, 360deg);
+            }
+            to {
+                -webkit-transform: rotate3d(0deg);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url(star.jpg);
+            background-size: cover;
+            background-color: #1d2630;
+            
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .spinner-box {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .leo {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .blue-orbit {
+            width: 165px;
+            height: 165px;
+            border: 1px solid #91daffa5;
+            animation: spin3D 3s linear 0.2s infinite;
+        }
+
+        .green-orbit {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #91daffa5;
+            animation: spin3D 2s linear 0s infinite;
+        }
+
+        .red-orbit {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #ffca91a5;
+            animation: spin3D 1s linear 0s infinite;
+        }
+
+        .white-orbit {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #ffffff;
+            animation: spin3D 5s linear 0s infinite;
+        }
+
+        .w1 {
+            transform: rotate3d(1, 1, 1, 90deg);
+        }
+
+        .w2 {
+            transform: rotate3d(1, 2, 5, 90deg);
+        }
+
+        .w3 {
+            transform: rotate3d(5, 1, 2, 90deg);
+        }
+        /* Füge hier weitere Stile für das Hinzufügen von h1 und p hinzu */
+        .content {
+            text-align: center;
+            color: #ffffff; /* Ändere die Textfarbe nach Bedarf */
+            margin-top: 20px; /* Passe den oberen Abstand nach Bedarf an */
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 2em; /* Passe die Schriftgröße nach Bedarf an */
+            margin-bottom: 10px; /* Passe den unteren Abstand nach Bedarf an */
+        }
+
+        p {
+            font-size: 1.2em; /* Passe die Schriftgröße nach Bedarf an */
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="spinner-box">
+        <div class="blue-orbit leo"></div>
+        <div class="green-orbit leo"></div>
+        <div class="red-orbit leo"></div>
+        <div class="white-orbit leo"></div>
+        <div class="white-orbit w2 leo"></div>
+        <div class="white-orbit w3 leo"></div>
+    </div>
+
+    <!-- Hinzugefügte HTML-Elemente für h1 und p -->
+    <div class="content">
+        <h1>Willkommen bei RedstoneKings Official</h1>
+        <p>Wir arbeiten an etwas Großem! Bald verfügbar...</p>
+    </div>
+
+    <div class="scroll1">
+        <h1>TEST</h1>
+    </div>
+</body>
+</html>

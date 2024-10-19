@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedstoneKings Official</title>
+    <link rel="icon" href="redstone.png">
+    <style>
+        /* Allgemeiner Text und Hintergrundbild */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: #666;
+            background-image: url('Star.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        /* Navigationsleiste */
+        .sidebar {
+            width: 270px;
+            height: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+
+        /* Button-Stil für die Navigationsleiste */
+        .sidebar a.button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        /* Button-Stil für aktive Seite */
+        .sidebar a.active {
+            background-color: #777777;
+        }
+
+        /* Inhalt rechts von der Navigationsleiste */
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Widget-Stil */
+        .widget-article {
+            text-align: center;
+        }
+
+        .widget-article iframe {
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 3em;
+            position: relative;
+            text-align: center;
+        }
+
+        h1::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: auto;
+            z-index: -1;
+            color: aqua; /* Neon-Glüheffekt-Farbe */
+            opacity: 1;
+            text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+            animation: glow 1s infinite;
+        }
+
+        @keyframes glow {
+            1% {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            font-size: 2em;
+            position: relative;
+            text-align: center;
+        }
+
+        h2::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: auto;
+            z-index: -1;
+            color: aqua; /* Neon-Glüheffekt-Farbe */
+            opacity: 1;
+            text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+            animation: glow 1s infinite;
+        }
+
+        @keyframes glow {
+            1% {
+                opacity: 1;
+            }
+        }
+        /* Footer-Stil für den Bereich mit den wichtigen Informationen */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Stil für die Buttons im Footer */
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="button" href="index.html">Home</a>
+        <a class="button active" href="calender.html">- Calender -</a>
+        <a class="button login-button" href="login.html">Login</a> <!-- Hier den Login-Button hinzufügen -->
+    </div>
+
+    <div class="content">
+        <h1 class="neon" data-text="Calender">Calender</h1>
+        <h2 class="neon" data-text="Alle Events">Alle Events</h2>
+
+        <div class="RestText2">
+            <p style="font-weight: bolder;">Year | Month | Day | 00:00</p>
+            <p>Ort: 000</p>
+            <p>(was passieren wird [NOT AUTO UPDATE] )</p>
+            <p> </p>
+            <p> </p>
+            <p style="font-weight: bolder;">Year | Month | Day | 00:00</p>
+            <p>Ort: 000</p>
+            <p>(was passieren wird [NOT AUTO UPDATE] )</p>
+            <p> </p>
+            <p> </p>
+       </div>
+
+       <div class="footer">
+        <a href="about.html">Über uns</a>
+        <a href="agb.html">AGB</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="imprint.html">Impressum</a>
+    </div>
+</body>
+</html>
